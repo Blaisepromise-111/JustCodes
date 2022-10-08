@@ -28,7 +28,7 @@ def randpass(
 		if any(map(lambda l: l > MAX_LENGTH, length)):
 			raise ValueError(f"length contains a value that is greater than {MAX_LENGTH}")
 		elif any(map(lambda l: l < MIN_LENGTH, length)):
-			raise ValueError(f"length contains a value that is less than {MAX_LENGTH}")
+			raise ValueError(f"length contains a value that is less than {MIN_LENGTH}")
 	else:
 		if length > MAX_LENGTH:
 			raise ValueError(f"length greater than {MAX_LENGTH}")
